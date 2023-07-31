@@ -26,7 +26,7 @@
   </div>
 </section>
 
-<Divider title="About me" id="section-about" style="mt-20" />
+<Divider title="About me" id="section-about" />
 
 <section class="flex gap-12 flex-col sm:flex-row">
   <div class="text-gray-600">
