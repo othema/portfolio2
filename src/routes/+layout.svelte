@@ -2,7 +2,7 @@
   import "../app.css";
 </script>
 
-<div class="mx-auto max-w-5xl px-4 sm:px-8">
+<div class="mx-auto max-w-4xl px-4 sm:px-8">
   <nav class="pt-10 pb-4 mb-10 flex gap-6 border-b border-gray-200 justify-center sm:justify-start">
     <a href="/" class="text-gray-600 hover:underline">Home</a>
     <a href="/blog" class="text-gray-600 hover:underline">Blog</a>

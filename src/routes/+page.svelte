@@ -4,7 +4,7 @@
   import Project from "../components/project.svelte";
   import Review from "../components/review.svelte";
 </script>
-<section class="mx-auto max-w-2xl text-center items-center flex flex-col mt-24">
+<section class="mt-20">
   <img src="/img/me.jpg" class="rounded-full w-28 h-28" alt="Me" />
 
   <h1 class="mt-4 text-3xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">
@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<Divider title="About me" id="section-about" style="mt-32" />
+<Divider title="About me" id="section-about" style="mt-20" />
 
 <section class="flex gap-12 flex-col sm:flex-row">
   <div class="text-gray-600">
