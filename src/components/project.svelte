@@ -1,7 +1,7 @@
 <script lang="ts">
   export let name: string;
   export let tags: string[];
-  export let link: string;
+  export let link: string = "#";
 </script>
 
 <div class="rounded-lg p-6 border border-gray-200 hover:shadow duration-75">
