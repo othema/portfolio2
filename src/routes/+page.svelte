@@ -41,8 +41,8 @@
   <img class="sm:w-72 sm:h-72 rounded-lg shadow-sm" src="/img/me_large3.jpg" alt="A portrait of me" />
 </section>
 
-<Divider title="Projects">
-  These are a selection of some notable projects I have developed.
+<Divider title="Work">
+  A selection of some notable projects I have developed.
 </Divider>
 
 <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
