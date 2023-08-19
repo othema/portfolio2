@@ -5,6 +5,10 @@
   import Review from "../components/review.svelte";
 </script>
 
+<svelte:head>
+  <title>Home | Daniel George</title>
+</svelte:head>
+
 <section class="mt-20">
   <img src="/img/me.jpg" class="rounded-full w-28 h-28" alt="Me" />
 
