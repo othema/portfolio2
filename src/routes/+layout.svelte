@@ -1,12 +1,17 @@
 <script>
   import "../app.css";
   import { fly } from "svelte/transition";
+  import { page } from '$app/stores'
+
 
   export let data;
 </script>
 
 <div class="mx-auto max-w-4xl px-4 sm:px-8">
-  <nav class="pt-10 pb-4 mb-10 flex gap-6 border-b border-gray-200 justify-center sm:justify-start">
+  <nav class="pt-10 pb-4 mb-10 flex gap-6 border-b border-gray-200 justify-center sm:justify-start items-center">
+    {#if $page.url.pathname != "/" || true}
+      <a href="/"><img src="/img/me.jpg" class="rounded-full w-12" alt="Me" /></a>
+    {/if}
     <a href="/" class="text-gray-600 hover:underline">Home</a>
     <a href="/blog" class="text-gray-600 hover:underline">Blog</a>
   </nav>

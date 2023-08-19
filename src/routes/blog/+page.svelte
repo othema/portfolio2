@@ -6,6 +6,10 @@
   export let data: PageData;
 </script>
 
+<svelte:head>
+  <title>Blog | Daniel George</title>
+</svelte:head>
+
 <h1 class="text-3xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">
   Blog
 </h1>
