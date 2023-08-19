@@ -6,8 +6,8 @@
   export let href: string;
 </script>
 
-<a class="group cursor-pointer flex gap-6" {href}>
-  <img src={image} class="w-52 aspect-[3/2] object-cover rounded-lg" alt={title} />
+<a class="group cursor-pointer flex flex-col sm:flex-row gap-6" {href}>
+  <img src={image} class="w-full sm:w-52 aspect-[3/2] object-cover rounded-lg" alt={title} />
   <article>
     <h2 class="font-medium text-xl group-hover:text-indigo-600 group-hover:underline group-hover:after:content-['_→']">{title}</h2>
     <p class="text-gray-600 text-sm my-2">{description}</p>
