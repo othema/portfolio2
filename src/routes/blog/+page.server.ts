@@ -2,7 +2,7 @@ import { readdirSync } from "fs";
 import { cwd } from "process";
 import path from "path";
 
-const blogDir = "/static/posts";
+const blogDir = "/src/posts";
 
 export async function load() {
   const postNames = readdirSync(path.join(cwd(), blogDir)).filter((file) => file.endsWith(".md"));
