@@ -1,6 +1,6 @@
 <script>
-    import BlogCard from "../../components/blog-card.svelte";
-    import Link from "../../components/link.svelte";
+  import BlogCard from "../../components/blog-card.svelte";
+  import Link from "../../components/link.svelte";
 </script>
 
 <h1 class="text-3xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">
