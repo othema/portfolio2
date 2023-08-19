@@ -1,5 +1,8 @@
 <script>
   import "../app.css";
+  import { fly } from "svelte/transition";
+
+  export let data;
 </script>
 
 <div class="mx-auto max-w-4xl px-4 sm:px-8">
@@ -7,7 +10,14 @@
     <a href="/" class="text-gray-600 hover:underline">Home</a>
     <a href="/blog" class="text-gray-600 hover:underline">Blog</a>
   </nav>
-  <slot />
+  {#key data.url}
+    <div
+      in:fly={{ y: -10, duration: 300, delay: 300 }}
+      out:fly={{ y: 10, duration: 300 }}
+    >
+      <slot />
+    </div>
+  {/key}
 </div>
 
 <footer class="bg-gray-50 text-gray-500 text-sm h-28 border-t border-gray-200 mt-16">
