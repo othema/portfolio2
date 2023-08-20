@@ -1,5 +1,5 @@
 ---
-title: First blog post
+title: Welcome to the blog!
 image: /img/me_large.jpg
 description: The first blog post on this website. Discusses the purpose of this blog and my posting schedule that I will (hopefully) stick to.
 date: 2023-08-19
