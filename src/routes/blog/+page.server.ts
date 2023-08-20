@@ -6,15 +6,17 @@ export async function load() {
   const postNames = import.meta.glob('/src/posts/*.md', { eager: true })
   let posts: any[] = [];
   for (let postName in postNames) {
-    const file = postNames[postName];
+    const file: any = postNames[postName];
     const slug = postName.split("/").at(-1)?.replace(".md", "");
     
-    if (file && typeof file === "object" && "metadata" in file && slug) {
+    if (file && typeof file === "object" && file.metadata && file.metadata.published && slug) {
       const metadata: any = file.metadata;
       const post = { ...metadata, slug };
       posts.push(post);
     }
   }
+
+  posts = posts.sort((first, second) => new Date(second.date).getTime() - new Date(first.date).getTime())
 
   return {
     posts
