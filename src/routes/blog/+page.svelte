@@ -17,6 +17,6 @@
 
 <div class="divide-y [&>*]:py-6">
   {#each data.posts as post}
-    <BlogCard href={"/blog/" + post.slug} title={post.title} description={post.description} tags={post.tags} image={post.image} />
+    <BlogCard date={post.date} href={"/blog/" + post.slug} title={post.title} description={post.description} tags={post.tags} image={post.image} />
   {/each}
 </div>

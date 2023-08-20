@@ -1,10 +1,11 @@
 ---
 title: First blog post
 image: /img/me_large.jpg
-description: The first blog post on this website. Outlines the usage of this blog.
-date: 19-08-2023
+description: The first blog post on this website. Discusses the purpose of this blog and my posting schedule that I will (hopefully) stick to.
+date: Aug 19 2023
 tags:
   - Blog
+  - Test
 ---
 
 **Hello world!** ...and welcome to my new blog.
