@@ -1,6 +1,6 @@
 ---
 title: Stupidly easy page transitions in SvelteKit
-image: /img/me_large.jpg
+image: /img/blog/sveltekit-page-transitions.jpg
 description: Making page transitions has never been easier. No additional modules needed.
 date: 2023-08-20
 tags:
