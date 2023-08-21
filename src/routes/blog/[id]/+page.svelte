@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Link from "../../../components/link.svelte";
-
+  import { formatISODateToHumanReadable } from "$lib/helpers";
+  import Link from "../../../components/link.svelte";
   export let data: any;
 </script>
 
@@ -10,7 +10,7 @@
 
 <Link href="/blog" style="mb-3 block" target="">← All posts</Link>
 <div class="bg-gray-100 p-6 rounded-lg mb-10 shadow">
-  <span class="text-gray-600 text-sm">{data.date}</span>
+  <span class="text-gray-600 text-sm">{formatISODateToHumanReadable(data.date)}</span>
   <span class="ml-3 inline-flex gap-1.5 mb-3 align-baseline">
     {#each data.tags as tag}
       <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-200 text-gray-800">{tag}</span>
