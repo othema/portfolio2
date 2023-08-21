@@ -3,7 +3,6 @@
   import { fly } from "svelte/transition";
   import { page } from '$app/stores'
 
-
   export let data;
 </script>
 

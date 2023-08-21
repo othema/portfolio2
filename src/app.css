@@ -7,3 +7,11 @@
     @apply scroll-smooth;
   }
 }
+
+.shiki {
+  border: 1px solid theme("colors.gray.200");
+  transition: theme("transitionDuration.75");
+}
+.shiki:hover {
+  box-shadow: theme("boxShadow.DEFAULT");
+}
