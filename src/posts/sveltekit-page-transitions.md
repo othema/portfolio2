@@ -23,7 +23,7 @@ export function load({ url }) {
 
 ## Implementing transitions
 Now the client has access to the URL, it needs to perform a transition whenever it changes. We can utilise a key block for this. Key blocks destroy and recreate their contents whenever the value it has been given changes.
-```svelte
+```svelte title="test"
 <!-- routes/+layout.svelte -->
 
 <script>
@@ -45,8 +45,7 @@ Now the client has access to the URL, it needs to perform a transition whenever 
 - The `<div>` element contains a `<slot />` which inserts the rest of the page content inside of it.
 
 ## Customizing the transition
-Svelte offers 7 different transitions you can use: `fade`, `blur`, `fly`, `slide`, `scale`, `draw` and `crossfade`.
-
-## Troubleshooting
+Svelte offers 7 different transitions you can use: `fade`, `blur`, `fly`, `slide`, `scale`, `draw` and `crossfade`. Each transition takes in different parameters which you can read about <a href="https://svelte.dev/docs/svelte-transition" target="_blank">here</a>.
 
 ## Conclusion
+Thanks for reading and I hope you enjoyed this article. If you have any questions (or just want to chat!), drop me an email at djv.george@gmail.com. See you!

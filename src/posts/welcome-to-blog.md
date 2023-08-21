@@ -14,5 +14,5 @@ Here, I will be posting weekly about the latest tech news, importance of web des
 
 New posts drop every week. I am very excited to start this journey and I am sure I will learn lots along the way.
 
-Stay curious,<br/>
+See you!<br/>
 Daniel
