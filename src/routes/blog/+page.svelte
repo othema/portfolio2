@@ -8,6 +8,7 @@
 
 <svelte:head>
   <title>Blog | Daniel George</title>
+  <meta name="description" content="I discuss new technology and share tutorials weekly on my blog. View all of my articles here." />
 </svelte:head>
 
 <h1 class="text-3xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">

@@ -7,6 +7,7 @@
 
 <svelte:head>
   <title>Home | Daniel George</title>
+  <meta name="description" content="I'm Daniel, a web developer based in Surrey, England. Learn more about me on my portfolio." />
 </svelte:head>
 
 <section class="mt-20">

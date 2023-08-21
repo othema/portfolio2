@@ -18,3 +18,21 @@ export function formatISODateToHumanReadable(isoString: string) {
   const formattedDate = `${day}${suffix} ${month} ${date.getFullYear()}`;
   return formattedDate;
 }
+
+export async function getPosts() {
+  const postNames = import.meta.glob('/src/posts/*.md', { eager: true })
+  let posts: any[] = [];
+  for (let postName in postNames) {
+    const file: any = postNames[postName];
+    const slug = postName.split("/").at(-1)?.replace(".md", "");
+
+    if (file && typeof file === "object" && file.metadata && file.metadata.published && slug) {
+      const metadata: any = file.metadata;
+      const post = { ...metadata, slug };
+      posts.push(post);
+    }
+  }
+
+  posts = posts.sort((first, second) => new Date(second.date).getTime() - new Date(first.date).getTime())
+  return posts;
+}

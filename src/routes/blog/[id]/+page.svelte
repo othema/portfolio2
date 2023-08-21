@@ -6,6 +6,7 @@
 
 <svelte:head>
   <title>{data.title} | Daniel George</title>
+  <meta name="description" content={data.description} />
 </svelte:head>
 
 <Link href="/blog" style="mb-3 block" target="">← All posts</Link>
