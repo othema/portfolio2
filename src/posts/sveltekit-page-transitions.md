@@ -5,13 +5,14 @@ description: Making page transitions has never been easier. No additional module
 date: 2023-08-20
 tags:
   - Svelte
-published: false
+published: true
 ---
 
-
 ## Giving the client access to the url
+For the client to trigger a page transition, it needs to know when the page has changed. We can easily do this in SvelteKit by using a server-side `+layout.js` which returns the current url.
+
 ```js
-// +layout.js
+// routes/+layout.js
 
 export function load({ url }) {
   return {
@@ -21,10 +22,12 @@ export function load({ url }) {
 ```
 
 ## Implementing transitions
+Now the client has access to the URL, it needs to perform a transition whenever it changes. We can utilise a key block for this. Key blocks destroy and recreate their contents whenever the value it has been given changes.
 ```svelte
-<!-- +layout.svelte -->
+<!-- routes/+layout.svelte -->
 
 <script>
+  import { fly } from "svelte/transition";
   export let data;
 </script>
 
@@ -37,8 +40,12 @@ export function load({ url }) {
   </div>
 {/key}
 ```
-- The `#key` block updates the containing code every time `data.url` changes.
-- This causes a transition using the builtin SvelteKit transition library.
+- The key block destroys and recreates its children every time `data.url` changes.
+- When the `<div>` element is recreated, a transition is caused by the builtin Svelte library.
+- The `<div>` element contains a `<slot />` which inserts the rest of the page content inside of it.
+
+## Customizing the transition
+Svelte offers 7 different transitions you can use: `fade`, `blur`, `fly`, `slide`, `scale`, `draw` and `crossfade`.
 
 ## Troubleshooting
 
