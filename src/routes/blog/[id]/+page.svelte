@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Link from "../../../components/link.svelte";
+
   export let data: any;
 </script>
 
@@ -6,6 +8,7 @@
   <title>{data.title} | Daniel George</title>
 </svelte:head>
 
+<Link href="/" style="mb-3 block" target="">← All posts</Link>
 <div class="bg-gray-100 p-6 rounded-lg mb-10 shadow">
   <span class="text-gray-600 text-sm">{data.date}</span>
   <span class="ml-3 inline-flex gap-1.5 mb-3 align-baseline">
