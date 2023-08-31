@@ -1,4 +1,4 @@
-<script>
+e<script>
   import Divider from "../components/divider.svelte";
   import Link from "../components/link.svelte";
   import Project from "../components/project.svelte";
@@ -118,10 +118,10 @@
     <input type="hidden" name="access_key" value="cc8d5ce5-ee32-45c0-a178-fc53686a69aa" />
 
     <div class="flex gap-4 [&>*]:flex-grow flex-col sm:flex-row">
-      <input type="text" name="name" autocomplete="name" class="text-sm shadow-sm py-2 px-3 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-lg" placeholder="Full name" />
-      <input type="text" name="email" autocomplete="email" class="text-sm shadow-sm py-2 px-3 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-lg" placeholder="Email" />
+      <input required type="text" name="name" autocomplete="name" class="text-sm shadow-sm py-2 px-3 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-lg" placeholder="Full name" />
+      <input required type="text" name="email" autocomplete="email" class="text-sm shadow-sm py-2 px-3 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-lg" placeholder="Email" />
     </div>
-    <textarea name="message" rows="4" class="text-sm shadow-sm py-2 px-3 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-lg" placeholder="Message"></textarea>
+    <textarea required name="message" rows="4" class="text-sm shadow-sm py-2 px-3 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-lg" placeholder="Message"></textarea>
     <button type="submit" class="flex items-center justify-center px-3 py-2.5 border border-transparent text-sm leading-4 font-medium rounded-lg shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="-ml-0.5 mr-2 h-4 w-4">
         <path d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z" />
