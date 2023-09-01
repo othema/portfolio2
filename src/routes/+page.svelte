@@ -44,7 +44,7 @@ import Divider from "../components/divider.svelte";
       <!-- In my free time, I like to go to the gym, develop startups, and play basketball for my local team. -->
     </p>
   </div>
-  <img class="sm:w-72 sm:h-72 rounded-lg shadow-sm" src="/img/me_large3.jpg" alt="A portrait of me" />
+  <img class="hidden sm:block sm:w-72 sm:h-72 rounded-lg shadow-sm" src="/img/me_large3.jpg" alt="A portrait of me" />
 </section>
 
 <Divider title="Work">
@@ -66,7 +66,7 @@ import Divider from "../components/divider.svelte";
       </svg>
     </a>
 
-    <div class="grid grid-cols-2 gap-10">
+    <div class="grid sm:grid-cols-2 gap-2 sm:gap-10">
       <div>
         <p class="mt-2.5 text-gray-600 text-base">Recently, I had the joy of working with <Link target="_blank" href="http://sweetpassioncakes.co.uk">Sweet Passion Cakes</Link> on the redesign of their website. A lot of work was needed, but we quickly settled on a design that we were all happy with within the first day. The new website offers a simple and intuitive way for users to access information about the store and the cakes, while also making it easy to place orders and reserve tables.</p>
         <div class="mt-3 flex gap-1.5">
@@ -75,7 +75,7 @@ import Divider from "../components/divider.svelte";
           {/each}
         </div>
       </div>
-      <Carousel class="h-56 w-full rounded-lg" length={8} autoScroll={4}>
+      <Carousel class="h-56 w-full rounded-lg order-first sm:order-last mt-2 sm:mt-0" length={8} autoScroll={4}>
         <img src="/img/sweet-passion-cakes/1.png" class="w-full h-full object-cover" />
         <img src="/img/sweet-passion-cakes/2.png" class="w-full h-full object-cover" />
         <img src="/img/sweet-passion-cakes/3.png" class="w-full h-full object-cover" />
