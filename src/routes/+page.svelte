@@ -52,7 +52,7 @@ import Divider from "../components/divider.svelte";
 </Divider>
 
 <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-  <div class="rounded-lg p-6 border border-gray-200 hover:shadow duration-75 col-span-2">
+  <div class="rounded-lg p-6 border border-gray-200 hover:shadow duration-75 sm:col-span-2">
     <img src="/img/sweet-passion-cakes/logo.jpg" class="inline-block w-12 h-12 rounded-full" />
     <div class="inline-block ml-2 align-top">
       <div class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-gray-800 w-fit mb-1">Featured</div>
