@@ -1,4 +1,4 @@
-e<script>
+<script>
   import Divider from "../components/divider.svelte";
   import Link from "../components/link.svelte";
   import Project from "../components/project.svelte";
