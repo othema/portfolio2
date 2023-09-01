@@ -10,7 +10,7 @@
   <meta name="description" content="I'm Daniel George, a web developer based in Surrey, England. Learn more about me on my portfolio." />
 </svelte:head>
 
-<section class="mt-20">
+<section class="sm:mt-20">
   <img src="/img/me.jpg" class="rounded-full w-28 h-28" alt="Me" />
 
   <h1 class="mt-4 text-3xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">
