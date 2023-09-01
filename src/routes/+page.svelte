@@ -1,5 +1,6 @@
 <script>
-  import Divider from "../components/divider.svelte";
+  import Carousel from "../components/carousel.svelte";
+import Divider from "../components/divider.svelte";
   import Link from "../components/link.svelte";
   import Project from "../components/project.svelte";
   import Review from "../components/review.svelte";
@@ -51,6 +52,42 @@
 </Divider>
 
 <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  <div class="rounded-lg p-6 border border-gray-200 hover:shadow duration-75 col-span-2">
+    <img src="/img/sweet-passion-cakes/logo.jpg" class="inline-block w-12 h-12 rounded-full" />
+    <div class="inline-block ml-2 align-top">
+      <div class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-gray-800 w-fit mb-1">Featured</div>
+      <h3 class="text-xl font-medium">Sweet Passion Cakes</h3>
+    </div>
+
+    <a href="http://sweetpassioncakes.co.uk" target="_blank" class="float-right text-gray-600 hover:text-gray-700" type="button">
+      <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" />
+        <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" />
+      </svg>
+    </a>
+
+    <div class="grid grid-cols-2 gap-10">
+      <div>
+        <p class="mt-2.5 text-gray-600 text-base">Recently, I had the joy of working with <Link target="_blank" href="http://sweetpassioncakes.co.uk">Sweet Passion Cakes</Link> on the redesign of their website. A lot of work was needed, but we quickly settled on a design that we were all happy with within the first day. The new website offers a simple and intuitive way for users to access information about the store and the cakes, while also making it easy to place orders and reserve tables.</p>
+        <div class="mt-3 flex gap-1.5">
+          {#each ["Svelte", "Tailwind", "SEO"] as tag}
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">{tag}</span>
+          {/each}
+        </div>
+      </div>
+      <Carousel class="h-56 w-full rounded-lg" length={8} autoScroll={4}>
+        <img src="/img/sweet-passion-cakes/1.png" class="w-full h-full object-cover" />
+        <img src="/img/sweet-passion-cakes/2.png" class="w-full h-full object-cover" />
+        <img src="/img/sweet-passion-cakes/3.png" class="w-full h-full object-cover" />
+        <img src="/img/sweet-passion-cakes/4.png" class="w-full h-full object-cover" />
+        <img src="/img/sweet-passion-cakes/5.png" class="w-full h-full object-cover" />
+        <img src="/img/sweet-passion-cakes/6.png" class="w-full h-full object-cover" />
+        <img src="/img/sweet-passion-cakes/7.png" class="w-full h-full object-cover" />
+        <img src="/img/sweet-passion-cakes/8.png" class="w-full h-full object-cover" />
+      </Carousel>
+    </div>
+  </div>
+
   <Project name="Abehub 2" tags={["React", "SQL"]} link="https://github.com/othema/abehub2">
     <svg slot="icon" class="inline-block w-7 h-7 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:RDF><cc:Work><dc:title>Initials</dc:title><dc:creator><cc:Agent rdf:about=""><dc:title>Florian Körner</dc:title></cc:Agent></dc:creator><dc:source>https://github.com/dicebear/dicebear</dc:source><cc:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/" /></cc:Work></rdf:RDF></metadata><mask id="viewboxMask"><rect width="100" height="100" rx="0" ry="0" x="0" y="0" fill="#fff" /></mask><g mask="url(#viewboxMask)"><rect fill="#e53935" width="100" height="100" x="0" y="0" /><g transform="translate(10 10) scale(0.8)"><text x="50%" y="50%" font-family="Arial, sans-serif" font-size="50" font-weight="600" fill="#ffffff" text-anchor="middle" dy="17.800">AB</text></g></g></svg>
     A twitter-clone designed to connect students at Woking High School. Funded through a student-managed GoFundMe.
